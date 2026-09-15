@@ -1,0 +1,409 @@
+```html
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEDUSA • Digital Menu</title>
+
+<style>
+:root {
+    --bg: #0d0d0d;
+    --card: #151515;
+    --text: #f7f4ee;
+    --muted: #aaa6a0;
+    --accent: #d7b56d;
+    --line: #292929;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 42px 20px 30px;
+    border-bottom: 1px solid var(--line);
+}
+
+.logo {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 9px;
+}
+
+.location {
+    margin-top: 8px;
+    color: var(--accent);
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.est {
+    margin-top: 8px;
+    color: #aaa6a0;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.digital-menu {
+    margin-top: 18px;
+    color: #f7f4ee;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(13,13,13,.96);
+    border-bottom: 1px solid var(--line);
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav a {
+    display: inline-block;
+    padding: 15px 13px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+.container {
+    max-width: 760px;
+    margin: auto;
+    padding: 20px 16px 50px;
+}
+
+section {
+    margin-bottom: 38px;
+}
+
+.section-title {
+    color: var(--accent);
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.item {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 15px;
+    margin-bottom: 10px;
+}
+
+.item-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.name-en {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.description {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 7px;
+}
+
+.price {
+    color: var(--accent);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.note {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 34px;
+        letter-spacing: 7px;
+    }
+
+    .item-top {
+        align-items: flex-start;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MEDUSA</div>
+    <div class="location">EVDILOS IKARIAS</div>
+    <div class="est">EST. 2024</div>
+    <div class="digital-menu">DIGITAL MENU</div>
+</header>
+
+<nav>
+    <a href="#coffee">☕ Καφέδες</a>
+    <a href="#drinks">🥤 Ροφήματα</a>
+    <a href="#breakfast">🍳 Πρωινά</a>
+    <a href="#omelettes">🍳 Ομελέτες</a>
+    <a href="#burgers">🍔 Burgers</a>
+    <a href="#sandwich">🥪 Sandwich</a>
+    <a href="#club">🥪 Club</a>
+    <a href="#salads">🥗 Σαλάτες</a>
+    <a href="#crepes">🥞 Κρέπες</a>
+    <a href="#waffles">🧇 Waffles</a>
+    <a href="#desserts">🍦 Γλυκά</a>
+    <a href="#meze">🍽 Μεζέδες</a>
+    <a href="#drinks-alcohol">🍸 Ποτά</a>
+</nav>
+
+<div class="container">
+
+<!-- COFFEE -->
+<section id="coffee">
+    <div class="section-title">Καφέδες</div>
+    <div class="section-subtitle">Coffee</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Freddo Espresso</div><div class="name-en">Freddo Espresso</div></div><div class="price">3.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Freddo Cappuccino</div><div class="name-en">Freddo Cappuccino</div></div><div class="price">3.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Espresso 1</div><div class="name-en"> single Espresso </div></div><div class="price">2.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Espresso 2</div><div class="name-en">Double Espresso</div></div><div class="price">3.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Macchiato</div><div class="name-en">Macchiato</div></div><div class="price">3.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Cappuccino 1</div><div class="name-en"> single Cappuccino</div></div><div class="price">3.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Cappuccino 2</div><div class="name-en">Double Cappuccino</div></div><div class="price">3.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Latte / Iced Latte</div><div class="name-en">Hot Latte / Ice Latte</div></div><div class="price">3.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Φραπές / Nes</div><div class="name-en">Frappe / Instant Coffee</div></div><div class="price">3.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Ελληνικός 1</div><div class="name-en">single Greek Coffee</div></div><div class="price">2.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Ελληνικός 2</div><div class="name-en">Double Greek Coffee</div></div><div class="price">3.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Φίλτρου</div><div class="name-en">Filter Coffee</div></div><div class="price">3.00€</div></div></div>
+</section>
+
+<!-- DRINKS -->
+<section id="drinks">
+    <div class="section-title">Ροφήματα</div>
+    <div class="section-subtitle">Beverages</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Κρύα / Ζεστή Σοκολάτα</div><div class="name-en">Hot / Cold Chocolate</div></div><div class="price">4.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Milkshake</div><div class="name-en">Milkshake</div></div><div class="price">6.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Γρανίτα</div><div class="name-en">Granita / Slush</div></div><div class="price">4.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Φυσικός Χυμός Πορτοκάλι</div><div class="name-en">Fresh Orange Juice</div></div><div class="price">4.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Αφέψημα</div><div class="name-en">Tea / Herbal Infusion</div></div><div class="price">2.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Smoothies</div><div class="name-en">Smoothies</div></div><div class="price">6.50€</div></div></div>
+</section>
+
+<!-- BREAKFAST -->
+<section id="breakfast">
+    <div class="section-title">Πρωινά</div>
+    <div class="section-subtitle">Breakfast</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Croque Madame</div><div class="name-en">Croque Madame</div></div><div class="price">8.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Γιαούρτι - Μέλι - Βρώμη</div><div class="name-en">Yogurt - Honey - Oats</div></div><div class="price">6.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Χρυσές Φέτες</div><div class="name-en">French Toast</div></div><div class="price">7.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Αυγά Μάτια, Μπέικον</div><div class="name-en">Fried Eggs, Bacon</div></div><div class="price">5.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Pancakes Βάση</div><div class="name-en">Pancakes Base</div></div><div class="price">5.00€</div></div></div>
+</section>
+
+<!-- OMELETTES -->
+<section id="omelettes">
+    <div class="section-title">Ομελέτες</div>
+    <div class="section-subtitle">Omelettes</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Αθλητή</div><div class="name-en">Athlete Omelette</div><div class="description">Κοτόπουλο • πιπεριά • ντομάτα • τυρί • κρεμμύδι<br>Chicken • pepper • tomato • cheese • onion</div></div><div class="price">12.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Deluxe</div><div class="name-en">Deluxe Omelette</div><div class="description">Μπέικον • τσένταρ • κοτόπουλο • κρεμμύδι<br>Bacon • cheddar • chicken • onion</div></div><div class="price">12.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Ελληνική</div><div class="name-en">Greek Omelette</div><div class="description">Ντομάτα • ελιές • πιπεριά • φέτα<br>Tomato • olives • pepper • feta</div></div><div class="price">8.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Επιλογής</div><div class="name-en">Build Your Own Omelette</div><div class="description">Βάση + υλικά επιλογής / Base + toppings of your choice</div></div><div class="price">5.00€</div></div></div>
+</section>
+
+<!-- BURGERS -->
+<section id="burgers">
+    <div class="section-title">Burgers</div>
+    <div class="section-subtitle">Burgers</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Medusa</div><div class="name-en">Medusa Burger</div><div class="description">2πλο μπιφτέκι • μαρούλι • ντομάτα • τυρί • μπέικον • καραμελωμένα κρεμμύδια • Medusa sauce<br>Double beef patty • lettuce • tomato • cheese • bacon • caramelized onions • Medusa sauce</div></div><div class="price">10.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Cheeseburger</div><div class="name-en">Cheeseburger</div><div class="description">Μπιφτέκι • τυρί • μπέικον • κέτσαπ • μαγιονέζα<br>Beef patty • cheese • bacon • ketchup • mayonnaise</div></div><div class="price">8.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Chicken Burger</div><div class="name-en">Chicken Burger</div><div class="description">Κοτόπουλο • τυρί • ντομάτα • μαρούλι • Caesar sauce<br>Chicken • cheese • tomato • lettuce • Caesar sauce</div></div><div class="price">8.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Hot Dog</div><div class="name-en">Hot Dog</div></div><div class="price">3.00€</div></div></div>
+</section>
+
+<!-- SANDWICH -->
+<section id="sandwich">
+    <div class="section-title">Sandwich</div>
+    <div class="section-subtitle">Sandwiches</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Sandwich Επιλογής</div><div class="name-en">Build Your Own Sandwich</div><div class="description">Βάση + υλικά επιλογής / Base + toppings of your choice</div></div><div class="price">3.00€</div></div></div>
+</section>
+
+<!-- CLUB -->
+<section id="club">
+    <div class="section-title">Club Sandwich</div>
+    <div class="section-subtitle">Club Sandwiches</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Κλασικό / Γαλοπούλα</div><div class="name-en">Classic / Turkey</div></div><div class="price">8.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Κοτόπουλο</div><div class="name-en">Chicken</div></div><div class="price">9.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Star</div><div class="name-en">Star Club</div></div><div class="price">11.50€</div></div></div>
+</section>
+
+<!-- SALADS -->
+<section id="salads">
+    <div class="section-title">Σαλάτες</div>
+    <div class="section-subtitle">Salads</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Χωριάτικη</div><div class="name-en">Greek Salad</div></div><div class="price">8.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Καίσαρα</div><div class="name-en">Caesar Salad</div></div><div class="price">9.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Σεφ</div><div class="name-en">Chef Salad</div></div><div class="price">9.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Ντάκος</div><div class="name-en">Dakos</div></div><div class="price">8.50€</div></div></div>
+</section>
+
+<!-- CREPES -->
+<section id="crepes">
+    <div class="section-title">Κρέπες</div>
+    <div class="section-subtitle">Crepes</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Circle Love</div><div class="name-en">Chocolate • Biscuit</div></div><div class="price">6.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Choco Banana </div><div class="name-en">Chocolate • Banana • Biscuit</div></div><div class="price">7.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Buenomania</div><div class="name-en">Bueno • Biscuit</div></div><div class="price">8.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">White Dream</div><div class="name-en">Chocolate • White Chocolate • Oreo</div></div><div class="price">9.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Caprice Lover</div><div class="name-en">Caprice • Chocolate</div></div><div class="price">9.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Κλασική Αλμυρή</div><div class="name-en">Classic Savory Crepe</div><div class="description">Τυρί • ντομάτα • ζαμπόν • μαγιονέζα<br>Cheese • tomato • ham • mayonnaise</div></div><div class="price">7.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Μπέικον</div><div class="name-en">Bacon Crepe</div><div class="description">Τυρί • μπέικον • πατατάκια • τυροσαλάτα<br>Cheese • bacon • chips • cheese spread</div></div><div class="price">7.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Γαλοπούλα</div><div class="name-en">Turkey Crepe</div><div class="description">Τυρί • καλαμπόκι • ντομάτα • γαλοπούλα • μαγιονέζα<br>Cheese • corn • tomato • turkey • mayonnaise</div></div><div class="price">8.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Ιταλική</div><div class="name-en">Italian Crepe</div><div class="description">Τυρί • φέτα • σαλάμι αέρος • πιπεριά • ντομάτα • τυροσαλάτα<br>Cheese • feta • salami • pepper • tomato • cheese spread</div></div><div class="price">8.50€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Κοτόπουλο</div><div class="name-en">Chicken Crepe</div><div class="description">Κοτόπουλο • τυρί • ντομάτα • πιπεριά • καλαμπόκι • Caesar sauce<br>Chicken • cheese • tomato • pepper • corn • Caesar sauce</div></div><div class="price">9.00€</div></div></div>
+</section>
+
+<!-- WAFFLES -->
+<section id="waffles">
+    <div class="section-title">Waffles</div>
+    <div class="section-subtitle">Waffles</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Waffle Βάση</div><div class="name-en">Waffle Base</div><div class="description">Με υλικά επιλογής / With toppings of your choice</div></div><div class="price">5.00€</div></div></div>
+</section>
+
+<!-- DESSERTS -->
+<section id="desserts">
+    <div class="section-title">Γλυκά</div>
+    <div class="section-subtitle">Desserts</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Παγωτό</div><div class="name-en">Ice Cream</div></div><div class="price">3.00€</div></div></div>
+</section>
+
+<!-- MEZE -->
+<section id="meze">
+    <div class="section-title">Μεζέδες</div>
+    <div class="section-subtitle">Appetizers / Meze</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Μεζές Κρεατικών</div><div class="name-en">Meat Platter</div></div><div class="price">12€ / 15€ / 40€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Μεζές Θαλασσινών</div><div class="name-en">Seafood Platter</div></div><div class="price">10€ / 15€ / 30€</div></div></div>
+</section>
+
+<!-- ALCOHOL -->
+<section id="drinks-alcohol">
+    <div class="section-title">Ποτά</div>
+    <div class="section-subtitle">Drinks</div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Ποτά</div><div class="name-en">Spirits</div></div><div class="price">7€ / 9€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Μπύρες</div><div class="name-en">Beers</div></div><div class="price">4.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Ποτήρι Κρασί</div><div class="name-en">Glass of Wine</div></div><div class="price">6.00€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Cocktail</div><div class="name-en">Cocktails</div></div><div class="price">8€ / 12€</div></div></div>
+
+    <div class="item"><div class="item-top"><div><div class="name">Ούζο - Τσίπουρο</div><div class="name-en">Ouzo - Tsipouro</div></div><div class="price">3€ / 9€</div></div></div>
+</section>
+
+</div>
+
+<footer>
+    MEDUSA • EVDILOS IKARIAS • DIGITAL MENU
+</footer>
+
+</body>
+</html>
+```
